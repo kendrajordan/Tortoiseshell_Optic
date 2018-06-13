@@ -1,0 +1,148 @@
+html,body{
+  font-size:18px;
+  line-height: 1.4;
+  font-family:"Helvetica",sans-serif;
+  margin:0;
+  padding:0;
+}
+.background-container{
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 50% ;
+  height:30rem;
+  display:flex;
+  justify-content:center;
+}
+.site-container{
+  display:flex;
+  flex-direction: column;
+  width:960px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom:1rem;
+  background-color:cadetblue;
+  color:white;
+  max-width: 100%;
+}
+.logo{
+  display: inline-flex;
+  margin-left: 2rem;
+}
+.glasses_logo{
+  height:1.5rem;
+  margin-right: 1rem;
+}
+header h1{
+  font-size:1rem;
+}
+header nav ul li{
+  display: inline-block;
+  margin-right: 2rem;
+}
+.slogan{
+  position: relative;
+  left:2rem;
+  display:flex;
+  justify-content: flex-end;
+  max-width:100%;
+}
+.slogan h1{
+  display:block;
+  margin-top:10rem;
+  padding:1.5rem 5rem;
+  background-color: white;
+  font-size:2rem;
+  font-weight:bold;
+  line-height:1.2;
+}
+.icons-container{
+  display:flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.icons-container .site-container{
+  display:flex;
+  justify-content: center;
+  width:960px;
+}
+ .icons{
+   display: flex;
+   justify-content: center;
+  margin-top:3rem;
+}
+.icons .box{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:8rem;
+  width:5rem;
+  text-align: center;
+  align-items: center;
+}
+.paper{
+  width:3.5rem;
+}
+.ruler{
+  width: 5rem;
+}
+.space{
+  margin-left:6rem;
+  margin-right:6rem;
+}
+.truck{
+  width:5rem;
+}
+.schedule-container{
+  display:flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.schedule-container .site-container{
+  width:960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cube{
+    width:35%;
+padding-right: 5%;
+}
+.cube h2{
+  display: block;
+  background-color: cadetblue;
+  color:white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding:0.5rem 0 0.5rem 1.25rem;
+  width: 10rem;
+  margin-top:3rem;
+  margin-bottom: 1rem;
+}
+.cube p{
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+footer{
+  max-width:100%;
+  display: flex;
+  justify-content: center;
+}
+footer .site-container{
+  width:960px;
+  background-color: azure;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+}
+.copyright{
+  display: flex;
+}
+.blacklogo{
+height: 1.5rem;
+  margin-right: 1rem;
+}
