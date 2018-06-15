@@ -19,6 +19,7 @@ html,body{
   flex-direction: column;
   width:960px;
 }
+/*header*/
 header{
   display: flex;
   justify-content: space-between;
@@ -44,6 +45,10 @@ header nav ul li{
   display: inline-block;
   margin-right: 2rem;
 }
+header .menu{
+  display:none;
+}
+/*Company Slogan*/
 .slogan{
   position: relative;
   left:2rem;
@@ -60,6 +65,7 @@ header nav ul li{
   font-weight:bold;
   line-height:1.2;
 }
+/*icons section*/
 .icons-container{
   display:flex;
   justify-content: center;
@@ -97,6 +103,7 @@ header nav ul li{
 .truck{
   width:5rem;
 }
+/*philosophy & appointment section*/
 .schedule-container{
   display:flex;
   justify-content: center;
@@ -109,7 +116,7 @@ header nav ul li{
   justify-content: center;
 }
 .cube{
-    width:35%;
+width:35%;
 padding-right: 5%;
 }
 .cube h2{
@@ -127,6 +134,7 @@ padding-right: 5%;
   font-size: 1rem;
   margin-bottom: 5rem;
 }
+/*footer*/
 footer{
   max-width:100%;
   display: flex;
@@ -145,4 +153,133 @@ footer .site-container{
 .blacklogo{
 height: 1.5rem;
   margin-right: 1rem;
+}
+/*Tablet media query*/
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .background-container .site-container{
+    max-width:100%;
+  }
+  header{
+    margin-top:0;
+  }
+  header .menu{
+    display: none;
+  }
+  .slogan{
+    left:0rem;
+  }
+  .slogan h1{
+    margin-top:5rem;
+    padding:0.75rem 4rem;
+    font-size:1.33rem;
+    margin-right:2rem;
+  }
+  .background-container{
+    height: 22rem;
+    background-size: cover;
+  }
+}
+/*phone media query*/
+@media only screen and (max-width:480px),(min-width:480px) and (max-width:768px){
+  .logo h1{
+    display:none;
+  }
+  .background-container{
+    height: 17rem;
+    background-size:200% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+
+  }
+  .background-container .site-container{
+    max-width:100%;
+  }
+  header{
+    margin-top:0;
+  }
+  header .menu{
+    display: contents;
+  }
+  header .list{
+    display:none;
+  }
+  .slogan{
+    left:0rem;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .slogan h1{
+    margin-top:9rem;
+    width: 100%;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    text-align: center;
+    font-size:1rem;
+  }
+  .icons-container .site-container{
+    width:100%;
+
+  }
+  .icons{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 3.77rem;
+    margin-top: 3.77rem;
+  }
+  .icons .box h3{
+    0.77rem;
+  }
+  .space{
+    margin-top:1.54rem;
+    margin-bottom:1.54rem;
+    margin-left:0;
+    margin-right:0;
+  }
+  .schedule-container{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .schedule-container .site-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .cube{
+  width:100%;
+  padding-right:0;
+  }
+  h2.block{
+  width: 100%;
+  margin:0;
+  align-items: center;
+  padding-left:0;
+  padding-right:0;
+  }
+  .cube h2{
+    max-width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-left:0;
+    margin-bottom:1rem;
+
+  }
+  .cube p{
+    font-size:0.77rem;
+    margin-bottom:4rem;
+  }
+  footer{
+    max-width:100%;
+  }
+  .copyright{
+    justify-content: center;
+  }
+  footer .copyright h2{
+    display:none;
+
+
+  }
 }
